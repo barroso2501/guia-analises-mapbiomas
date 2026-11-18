@@ -1,0 +1,10 @@
+# Configuração do site (GitHub Pages / Jekyll).
+# title e description aparecem no topo da página e na aba do navegador.
+title: Guia das análises temporais do MapBiomas
+description: Para quem está começando no Meu MapBiomas — o que cada análise responde e como interpretar
+lang: pt-BR
+# Tema padrão do GitHub Pages; não precisa instalar nada.
+theme: jekyll-theme-primer
+# O README.md descreve o repositório e não deve virar página do site.
+exclude:
+  - README.md
