@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif" role="img" aria-labelledby="t d">
+  <title id="t">Como um projeto do Meu MapBiomas funciona</title>
+  <desc id="d">A organização contém projetos. Cada projeto cruza territórios (onde) com temas (o quê); a plataforma calcula a estatística de cada tema em cada território. Uma análise cria um tema novo a partir de outro tema.</desc>
+  <defs>
+    <marker id="seta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="470" fill="#ffffff"/>
+
+  <!-- Organização -->
+  <rect x="12" y="12" width="936" height="446" rx="14" fill="#f4f6f8" stroke="#c9d1d9"/>
+  <text x="32" y="42" font-size="17" font-weight="700" fill="#1f2933">Organização (TNC Brasil)</text>
+  <text x="32" y="62" font-size="13" fill="#52606d">espaço isolado: outras instituições não veem · pode ter vários projetos</text>
+
+  <!-- Projeto -->
+  <rect x="32" y="78" width="896" height="360" rx="12" fill="#ffffff" stroke="#9aa5b1"/>
+  <text x="52" y="106" font-size="16" font-weight="700" fill="#1f2933">Projeto: PN Serra da Capivara</text>
+  <text x="52" y="125" font-size="12.5" fill="#52606d">tudo começa privado · só o administrador publica</text>
+
+  <!-- Territórios -->
+  <text x="60" y="160" font-size="14" font-weight="700" fill="#2f6f4f">TERRITÓRIOS — onde</text>
+  <rect x="60" y="172" width="210" height="40" rx="8" fill="#e3f1e8" stroke="#2f6f4f"/>
+  <text x="165" y="197" font-size="13.5" text-anchor="middle" fill="#1f2933">Parque nacional</text>
+  <rect x="60" y="222" width="210" height="40" rx="8" fill="#e3f1e8" stroke="#2f6f4f"/>
+  <text x="165" y="247" font-size="13.5" text-anchor="middle" fill="#1f2933">Zona de amortecimento</text>
+  <text x="60" y="286" font-size="12" fill="#52606d">importados do MapBiomas</text>
+  <text x="60" y="302" font-size="12" fill="#52606d">ou shapefile/KML seu</text>
+
+  <!-- Temas -->
+  <text x="330" y="160" font-size="14" font-weight="700" fill="#7a4b12">TEMAS — o quê</text>
+  <rect x="330" y="172" width="220" height="34" rx="8" fill="#fbefdc" stroke="#b7791f"/>
+  <text x="440" y="194" font-size="13.5" text-anchor="middle" fill="#1f2933">Cobertura e uso</text>
+  <rect x="330" y="214" width="220" height="34" rx="8" fill="#fbefdc" stroke="#b7791f"/>
+  <text x="440" y="236" font-size="13.5" text-anchor="middle" fill="#1f2933">Fogo</text>
+  <rect x="330" y="256" width="220" height="34" rx="8" fill="#fbefdc" stroke="#b7791f"/>
+  <text x="440" y="278" font-size="13.5" text-anchor="middle" fill="#1f2933">Desmatamento</text>
+  <rect x="330" y="322" width="220" height="34" rx="8" fill="#ffffff" stroke="#b7791f" stroke-dasharray="5 4"/>
+  <text x="440" y="344" font-size="13.5" text-anchor="middle" fill="#1f2933">Áreas estáveis</text>
+  <path d="M552 189 C 600 210, 600 320, 554 336" fill="none" stroke="#b7791f" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#seta)"/>
+  <text x="604" y="268" font-size="12" fill="#7a4b12">análise:</text>
+  <text x="604" y="283" font-size="12" fill="#7a4b12">tema novo</text>
+  <text x="330" y="380" font-size="12" fill="#52606d">importados do MapBiomas ou asset seu do Earth Engine</text>
+
+  <!-- Seta para estatísticas -->
+  <line x1="676" y1="250" x2="704" y2="250" stroke="#4a5568" stroke-width="2" marker-end="url(#seta)"/>
+
+  <!-- Estatísticas -->
+  <text x="712" y="160" font-size="14" font-weight="700" fill="#1f4e79">ESTATÍSTICAS</text>
+  <text x="712" y="178" font-size="12" fill="#52606d">cada tema × cada território,</text>
+  <text x="712" y="193" font-size="12" fill="#52606d">calculada pela plataforma</text>
+  <g font-size="11.5" fill="#1f2933">
+    <rect x="712" y="206" width="196" height="150" rx="6" fill="#e8f0f8" stroke="#1f4e79"/>
+    <line x1="712" y1="232" x2="908" y2="232" stroke="#1f4e79" stroke-opacity="0.5"/>
+    <line x1="790" y1="206" x2="790" y2="356" stroke="#1f4e79" stroke-opacity="0.5"/>
+    <line x1="850" y1="206" x2="850" y2="356" stroke="#1f4e79" stroke-opacity="0.5"/>
+    <text x="820" y="223" text-anchor="middle" font-weight="700">Parque</text>
+    <text x="879" y="223" text-anchor="middle" font-weight="700">Zona</text>
+    <text x="720" y="254">Cobertura</text><text x="820" y="254" text-anchor="middle">ha</text><text x="879" y="254" text-anchor="middle">ha</text>
+    <text x="720" y="284">Fogo</text><text x="820" y="284" text-anchor="middle">ha</text><text x="879" y="284" text-anchor="middle">ha</text>
+    <text x="720" y="314">Desmat.</text><text x="820" y="314" text-anchor="middle">ha</text><text x="879" y="314" text-anchor="middle">ha</text>
+    <text x="720" y="344">Estáveis</text><text x="820" y="344" text-anchor="middle">ha</text><text x="879" y="344" text-anchor="middle">ha</text>
+  </g>
+  <text x="712" y="380" font-size="12" fill="#52606d">1ª vez: ~30 s · depois fica salva</text>
+  <text x="712" y="396" font-size="12" fill="#52606d">tabela baixável em CSV</text>
+</svg>

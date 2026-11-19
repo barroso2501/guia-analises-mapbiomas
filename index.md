@@ -6,6 +6,8 @@ layout: default
 
 Atualizado em 18/11/2026 · Mario Barroso Ramos Neto (TNC Brasil)
 
+**Começando agora?** Veja antes os [Primeiros passos no Meu MapBiomas](tutorial.html): como criar um projeto e a lógica de cada passo.
+
 **Nesta página:** [Como as análises funcionam](#funcionamento) · [Qual análise responde à minha pergunta](#perguntas) · [Os quatro pixels de exemplo](#pixels) · [As 10 análises](#dez-analises) · [As outras 6 análises](#outras-analises) · [Cuidados ao interpretar](#cuidados) · [Mapas, áreas e fontes](#fontes)
 
 ## Como as análises funcionam {#funcionamento}
